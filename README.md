@@ -1,7 +1,7 @@
 <p align="center">
 <img src="Images/logo.png" alt="LayoutKit" height="82" />
 <br />
-Chain initializers in Swift.
+Chained initializers in Swift.
 <br /><br />
 </p>
 
@@ -39,6 +39,6 @@ Run `carthage update` to build the framework and drag the built `ChainKit.framew
 		- UICollectionView
 			- UICollectionViewFlowLayout
 		- UITextView
-- UIButton
-- UIStackView
-- UIToolbar
+	- UIButton
+	- UIStackView
+	- UIToolbar
