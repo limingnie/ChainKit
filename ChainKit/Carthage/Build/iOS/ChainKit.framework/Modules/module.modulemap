@@ -1,0 +1,10 @@
+framework module ChainKit {
+  umbrella header "ChainKit.h"
+
+  export *
+  module * { export * }
+}
+
+module ChainKit.Swift {
+    header "ChainKit-Swift.h"
+}
