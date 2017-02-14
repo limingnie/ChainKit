@@ -18,6 +18,8 @@
 		B656EA581E52D6990002D3CF /* UICollectionViewFlowLayout+ChainKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656EA571E52D6990002D3CF /* UICollectionViewFlowLayout+ChainKit.swift */; };
 		B677AA001E52D9A600690862 /* UIButton+ChainKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677A9FF1E52D9A600690862 /* UIButton+ChainKit.swift */; };
 		B677AA031E52DDD200690862 /* UIStackView+ChainKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677AA021E52DDD200690862 /* UIStackView+ChainKit.swift */; };
+		B677AA0A1E53083E00690862 /* UITextView+ChainKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677AA091E53083E00690862 /* UITextView+ChainKit.swift */; };
+		B677AA0D1E530B9600690862 /* UIToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677AA0C1E530B9600690862 /* UIToolbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		B656EA571E52D6990002D3CF /* UICollectionViewFlowLayout+ChainKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+ChainKit.swift"; sourceTree = "<group>"; };
 		B677A9FF1E52D9A600690862 /* UIButton+ChainKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ChainKit.swift"; sourceTree = "<group>"; };
 		B677AA021E52DDD200690862 /* UIStackView+ChainKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+ChainKit.swift"; sourceTree = "<group>"; };
+		B677AA091E53083E00690862 /* UITextView+ChainKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+ChainKit.swift"; sourceTree = "<group>"; };
+		B677AA0C1E530B9600690862 /* UIToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIToolbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 		B656EA341E5269A60002D3CF /* ChainKit */ = {
 			isa = PBXGroup;
 			children = (
+				B677AA0B1E530B8A00690862 /* UIToolbar */,
+				B677AA081E53082F00690862 /* UITextView */,
 				B677AA011E52DDBB00690862 /* UIStackView */,
 				B677A9FE1E52D99200690862 /* UIButton */,
 				B656EA561E52D6830002D3CF /* UICollectionViewLayout */,
@@ -162,6 +168,22 @@
 			name = UIStackView;
 			sourceTree = "<group>";
 		};
+		B677AA081E53082F00690862 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				B677AA091E53083E00690862 /* UITextView+ChainKit.swift */,
+			);
+			name = UITextView;
+			sourceTree = "<group>";
+		};
+		B677AA0B1E530B8A00690862 /* UIToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				B677AA0C1E530B9600690862 /* UIToolbar.swift */,
+			);
+			name = UIToolbar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -246,12 +268,14 @@
 				B677AA001E52D9A600690862 /* UIButton+ChainKit.swift in Sources */,
 				B656EA551E52D3620002D3CF /* UICollectionView+ChainKit.swift in Sources */,
 				B656EA581E52D6990002D3CF /* UICollectionViewFlowLayout+ChainKit.swift in Sources */,
+				B677AA0D1E530B9600690862 /* UIToolbar.swift in Sources */,
 				B656EA3F1E5269CD0002D3CF /* UIView+ChainKit.swift in Sources */,
 				B656EA4F1E5277CD0002D3CF /* UIScrollView+ChainKit.swift in Sources */,
 				B656EA491E526E6D0002D3CF /* UITextField+ChainKit.swift in Sources */,
 				B656EA461E526C670002D3CF /* UILabel+ChainKit.swift in Sources */,
 				B656EA521E528D5D0002D3CF /* UITableView+ChainKit.swift in Sources */,
 				B677AA031E52DDD200690862 /* UIStackView+ChainKit.swift in Sources */,
+				B677AA0A1E53083E00690862 /* UITextView+ChainKit.swift in Sources */,
 				B656EA4C1E5271E30002D3CF /* UIImageView+ChainKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
