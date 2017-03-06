@@ -16,10 +16,12 @@
 		B656EA521E528D5D0002D3CF /* UITableView+ChainKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656EA511E528D5D0002D3CF /* UITableView+ChainKit.swift */; };
 		B656EA551E52D3620002D3CF /* UICollectionView+ChainKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656EA541E52D3620002D3CF /* UICollectionView+ChainKit.swift */; };
 		B656EA581E52D6990002D3CF /* UICollectionViewFlowLayout+ChainKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656EA571E52D6990002D3CF /* UICollectionViewFlowLayout+ChainKit.swift */; };
+		B676F86A1E6E0D89002A81BB /* NumberFormatter+Chainkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B676F8691E6E0D89002A81BB /* NumberFormatter+Chainkit.swift */; };
+		B676F86D1E6E11D0002A81BB /* DateFormatter+ChainKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B676F86C1E6E11D0002A81BB /* DateFormatter+ChainKit.swift */; };
 		B677AA001E52D9A600690862 /* UIButton+ChainKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677A9FF1E52D9A600690862 /* UIButton+ChainKit.swift */; };
 		B677AA031E52DDD200690862 /* UIStackView+ChainKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677AA021E52DDD200690862 /* UIStackView+ChainKit.swift */; };
 		B677AA0A1E53083E00690862 /* UITextView+ChainKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677AA091E53083E00690862 /* UITextView+ChainKit.swift */; };
-		B677AA0D1E530B9600690862 /* UIToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677AA0C1E530B9600690862 /* UIToolbar.swift */; };
+		B677AA0D1E530B9600690862 /* UIToolbar + Chainkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B677AA0C1E530B9600690862 /* UIToolbar + Chainkit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +36,12 @@
 		B656EA511E528D5D0002D3CF /* UITableView+ChainKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ChainKit.swift"; sourceTree = "<group>"; };
 		B656EA541E52D3620002D3CF /* UICollectionView+ChainKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ChainKit.swift"; sourceTree = "<group>"; };
 		B656EA571E52D6990002D3CF /* UICollectionViewFlowLayout+ChainKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewFlowLayout+ChainKit.swift"; sourceTree = "<group>"; };
+		B676F8691E6E0D89002A81BB /* NumberFormatter+Chainkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Chainkit.swift"; sourceTree = "<group>"; };
+		B676F86C1E6E11D0002A81BB /* DateFormatter+ChainKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+ChainKit.swift"; sourceTree = "<group>"; };
 		B677A9FF1E52D9A600690862 /* UIButton+ChainKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ChainKit.swift"; sourceTree = "<group>"; };
 		B677AA021E52DDD200690862 /* UIStackView+ChainKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+ChainKit.swift"; sourceTree = "<group>"; };
 		B677AA091E53083E00690862 /* UITextView+ChainKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+ChainKit.swift"; sourceTree = "<group>"; };
-		B677AA0C1E530B9600690862 /* UIToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIToolbar.swift; sourceTree = "<group>"; };
+		B677AA0C1E530B9600690862 /* UIToolbar + Chainkit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIToolbar + Chainkit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 		B656EA341E5269A60002D3CF /* ChainKit */ = {
 			isa = PBXGroup;
 			children = (
+				B676F86B1E6E11BB002A81BB /* DateFormatter */,
+				B676F8661E6E0D3B002A81BB /* NumberFormatter */,
 				B677AA0B1E530B8A00690862 /* UIToolbar */,
 				B677AA081E53082F00690862 /* UITextView */,
 				B677AA011E52DDBB00690862 /* UIStackView */,
@@ -152,6 +158,22 @@
 			name = UICollectionViewLayout;
 			sourceTree = "<group>";
 		};
+		B676F8661E6E0D3B002A81BB /* NumberFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				B676F8691E6E0D89002A81BB /* NumberFormatter+Chainkit.swift */,
+			);
+			name = NumberFormatter;
+			sourceTree = "<group>";
+		};
+		B676F86B1E6E11BB002A81BB /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				B676F86C1E6E11D0002A81BB /* DateFormatter+ChainKit.swift */,
+			);
+			name = DateFormatter;
+			sourceTree = "<group>";
+		};
 		B677A9FE1E52D99200690862 /* UIButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,7 +201,7 @@
 		B677AA0B1E530B8A00690862 /* UIToolbar */ = {
 			isa = PBXGroup;
 			children = (
-				B677AA0C1E530B9600690862 /* UIToolbar.swift */,
+				B677AA0C1E530B9600690862 /* UIToolbar + Chainkit.swift */,
 			);
 			name = UIToolbar;
 			sourceTree = "<group>";
@@ -265,10 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B676F86A1E6E0D89002A81BB /* NumberFormatter+Chainkit.swift in Sources */,
 				B677AA001E52D9A600690862 /* UIButton+ChainKit.swift in Sources */,
 				B656EA551E52D3620002D3CF /* UICollectionView+ChainKit.swift in Sources */,
 				B656EA581E52D6990002D3CF /* UICollectionViewFlowLayout+ChainKit.swift in Sources */,
-				B677AA0D1E530B9600690862 /* UIToolbar.swift in Sources */,
+				B677AA0D1E530B9600690862 /* UIToolbar + Chainkit.swift in Sources */,
 				B656EA3F1E5269CD0002D3CF /* UIView+ChainKit.swift in Sources */,
 				B656EA4F1E5277CD0002D3CF /* UIScrollView+ChainKit.swift in Sources */,
 				B656EA491E526E6D0002D3CF /* UITextField+ChainKit.swift in Sources */,
@@ -277,6 +300,7 @@
 				B677AA031E52DDD200690862 /* UIStackView+ChainKit.swift in Sources */,
 				B677AA0A1E53083E00690862 /* UITextView+ChainKit.swift in Sources */,
 				B656EA4C1E5271E30002D3CF /* UIImageView+ChainKit.swift in Sources */,
+				B676F86D1E6E11D0002A81BB /* DateFormatter+ChainKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +418,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ChainKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = avario.ChainKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,6 +440,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ChainKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = avario.ChainKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

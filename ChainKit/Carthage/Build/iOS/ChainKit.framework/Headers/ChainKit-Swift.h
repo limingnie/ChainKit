@@ -115,13 +115,113 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_UNAVAILABLE __attribute__((unavailable))
 #endif
 #if defined(__has_feature) && __has_feature(modules)
+@import Foundation;
 @import UIKit;
 @import CoreGraphics;
-@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+
+@interface NSDateFormatter (SWIFT_EXTENSION(ChainKit))
+- (nonnull instancetype)formattingContext:(NSFormattingContext)formattingContext;
+- (nonnull instancetype)dateFormat:(NSString * _Nonnull)dateFormat;
+- (nonnull instancetype)dateStyle:(NSDateFormatterStyle)dateStyle;
+- (nonnull instancetype)timeStyle:(NSDateFormatterStyle)timeStyle;
+- (nonnull instancetype)locale:(NSLocale * _Nonnull)locale;
+- (nonnull instancetype)generatesCalendarDates:(BOOL)generatesCalendarDates;
+- (nonnull instancetype)formatterBehavior:(NSDateFormatterBehavior)formatterBehavior;
+- (nonnull instancetype)timeZone:(NSTimeZone * _Nonnull)timeZone;
+- (nonnull instancetype)calendar:(NSCalendar * _Nonnull)calendar;
+- (nonnull instancetype)isLenient:(BOOL)isLenient;
+- (nonnull instancetype)twoDigitStartDate:(NSDate * _Nonnull)twoDigitStartDate;
+- (nonnull instancetype)defaultDate:(NSDate * _Nonnull)defaultDate;
+- (nonnull instancetype)eraSymbols:(NSArray<NSString *> * _Nonnull)eraSymbols;
+- (nonnull instancetype)monthSymbols:(NSArray<NSString *> * _Nonnull)monthSymbols;
+- (nonnull instancetype)shortMonthSymbols:(NSArray<NSString *> * _Nonnull)shortMonthSymbols;
+- (nonnull instancetype)weekdaySymbols:(NSArray<NSString *> * _Nonnull)weekdaySymbols;
+- (nonnull instancetype)shortWeekdaySymbols:(NSArray<NSString *> * _Nonnull)shortWeekdaySymbols;
+- (nonnull instancetype)amSymbol:(NSString * _Nonnull)amSymbol;
+- (nonnull instancetype)pmSymbol:(NSString * _Nonnull)pmSymbol;
+- (nonnull instancetype)longEraSymbols:(NSArray<NSString *> * _Nonnull)longEraSymbols;
+- (nonnull instancetype)veryShortMonthSymbols:(NSArray<NSString *> * _Nonnull)veryShortMonthSymbols;
+- (nonnull instancetype)standaloneMonthSymbols:(NSArray<NSString *> * _Nonnull)standaloneMonthSymbols;
+- (nonnull instancetype)shortStandaloneMonthSymbols:(NSArray<NSString *> * _Nonnull)shortStandaloneMonthSymbols;
+- (nonnull instancetype)veryShortStandaloneMonthSymbols:(NSArray<NSString *> * _Nonnull)veryShortStandaloneMonthSymbols;
+- (nonnull instancetype)veryShortWeekdaySymbols:(NSArray<NSString *> * _Nonnull)veryShortWeekdaySymbols;
+- (nonnull instancetype)standaloneWeekdaySymbols:(NSArray<NSString *> * _Nonnull)standaloneWeekdaySymbols;
+- (nonnull instancetype)shortStandaloneWeekdaySymbols:(NSArray<NSString *> * _Nonnull)shortStandaloneWeekdaySymbols;
+- (nonnull instancetype)veryShortStandaloneWeekdaySymbols:(NSArray<NSString *> * _Nonnull)veryShortStandaloneWeekdaySymbols;
+- (nonnull instancetype)quarterSymbols:(NSArray<NSString *> * _Nonnull)quarterSymbols;
+- (nonnull instancetype)shortQuarterSymbols:(NSArray<NSString *> * _Nonnull)shortQuarterSymbols;
+- (nonnull instancetype)standaloneQuarterSymbols:(NSArray<NSString *> * _Nonnull)standaloneQuarterSymbols;
+- (nonnull instancetype)shortStandaloneQuarterSymbols:(NSArray<NSString *> * _Nonnull)shortStandaloneQuarterSymbols;
+- (nonnull instancetype)gregorianStartDate:(NSDate * _Nonnull)gregorianStartDate;
+- (nonnull instancetype)doesRelativeDateFormatting:(BOOL)doesRelativeDateFormatting;
+@end
+
+@class NSNumber;
+
+@interface NSNumberFormatter (SWIFT_EXTENSION(ChainKit))
+- (nonnull instancetype)formattingContext:(NSFormattingContext)formattingContext;
+- (nonnull instancetype)numberStyle:(NSNumberFormatterStyle)numberStyle;
+- (nonnull instancetype)locale:(NSLocale * _Nonnull)locale;
+- (nonnull instancetype)generatesDecimalNumbers:(BOOL)generatesDecimalNumbers;
+- (nonnull instancetype)formatterBehavior:(NSNumberFormatterBehavior)formatterBehavior;
+- (nonnull instancetype)negativeFormat:(NSString * _Nonnull)negativeFormat;
+- (nonnull instancetype)textAttributesForNegativeValues:(NSDictionary<NSString *, id> * _Nullable)textAttributesForNegativeValues;
+- (nonnull instancetype)positiveFormat:(NSString * _Nonnull)positiveFormat;
+- (nonnull instancetype)textAttributesForPositiveValues:(NSDictionary<NSString *, id> * _Nullable)textAttributesForPositiveValues;
+- (nonnull instancetype)allowsFloats:(BOOL)allowsFloats;
+- (nonnull instancetype)decimalSeparator:(NSString * _Nonnull)decimalSeparator;
+- (nonnull instancetype)alwaysShowsDecimalSeparator:(BOOL)alwaysShowsDecimalSeparatoralwaysShowsDecimalSeparatoralwaysShowsDecimalSeparator;
+- (nonnull instancetype)currencyDecimalSeparator:(NSString * _Nonnull)currencyDecimalSeparator;
+- (nonnull instancetype)usesGroupingSeparator:(BOOL)usesGroupingSeparator;
+- (nonnull instancetype)groupingSeparator:(NSString * _Nonnull)groupingSeparator;
+- (nonnull instancetype)zeroSymbol:(NSString * _Nonnull)zeroSymbol;
+- (nonnull instancetype)textAttributesForZero:(NSDictionary<NSString *, id> * _Nullable)textAttributesForZero;
+- (nonnull instancetype)nilSymbol:(NSString * _Nonnull)nilSymbol;
+- (nonnull instancetype)textAttributesForNil:(NSDictionary<NSString *, id> * _Nullable)textAttributesForNil;
+- (nonnull instancetype)notANumberSymbol:(NSString * _Nonnull)notANumberSymbol;
+- (nonnull instancetype)textAttributesForNotANumber:(NSDictionary<NSString *, id> * _Nullable)textAttributesForNotANumber;
+- (nonnull instancetype)positiveInfinitySymbol:(NSString * _Nonnull)positiveInfinitySymbol;
+- (nonnull instancetype)textAttributesForPositiveInfinity:(NSDictionary<NSString *, id> * _Nullable)textAttributesForPositiveInfinity;
+- (nonnull instancetype)negativeInfinitySymbol:(NSString * _Nonnull)negativeInfinitySymbol;
+- (nonnull instancetype)textAttributesForNegativeInfinity:(NSDictionary<NSString *, id> * _Nullable)textAttributesForNegativeInfinity;
+- (nonnull instancetype)positivePrefix:(NSString * _Nonnull)positivePrefix;
+- (nonnull instancetype)positiveSuffix:(NSString * _Nonnull)positiveSuffix;
+- (nonnull instancetype)negativePrefix:(NSString * _Nonnull)negativePrefix;
+- (nonnull instancetype)negativeSuffix:(NSString * _Nonnull)negativeSuffix;
+- (nonnull instancetype)currencyCode:(NSString * _Nonnull)currencyCode;
+- (nonnull instancetype)currencySymbol:(NSString * _Nonnull)currencySymbol;
+- (nonnull instancetype)internationalCurrencySymbol:(NSString * _Nonnull)internationalCurrencySymbol;
+- (nonnull instancetype)percentSymbol:(NSString * _Nonnull)percentSymbol;
+- (nonnull instancetype)perMillSymbol:(NSString * _Nonnull)perMillSymbol;
+- (nonnull instancetype)minusSign:(NSString * _Nonnull)minusSign;
+- (nonnull instancetype)plusSign:(NSString * _Nonnull)plusSign;
+- (nonnull instancetype)exponentSymbol:(NSString * _Nonnull)exponentSymbol;
+- (nonnull instancetype)groupingSize:(NSInteger)groupingSize;
+- (nonnull instancetype)secondaryGroupingSize:(NSInteger)secondaryGroupingSize;
+- (nonnull instancetype)multiplier:(NSNumber * _Nullable)multiplier;
+- (nonnull instancetype)formatWidth:(NSInteger)formatWidth;
+- (nonnull instancetype)paddingCharacter:(NSString * _Nonnull)paddingCharacter;
+- (nonnull instancetype)paddingPosition:(NSNumberFormatterPadPosition)paddingPosition;
+- (nonnull instancetype)roundingMode:(NSNumberFormatterRoundingMode)roundingMode;
+- (nonnull instancetype)roundingIncrement:(NSNumber * _Nonnull)roundingIncrement;
+- (nonnull instancetype)minimumIntegerDigits:(NSInteger)minimumIntegerDigits;
+- (nonnull instancetype)maximumIntegerDigits:(NSInteger)maximumIntegerDigits;
+- (nonnull instancetype)minimumFractionDigits:(NSInteger)minimumFractionDigits;
+- (nonnull instancetype)maximumFractionDigits:(NSInteger)maximumFractionDigits;
+- (nonnull instancetype)minimum:(NSNumber * _Nullable)minimum;
+- (nonnull instancetype)maximum:(NSNumber * _Nullable)maximum;
+- (nonnull instancetype)currencyGroupingSeparator:(NSString * _Nonnull)currencyGroupingSeparator;
+- (nonnull instancetype)isLenient:(BOOL)isLenient;
+- (nonnull instancetype)usesSignificantDigits:(BOOL)usesSignificantDigits;
+- (nonnull instancetype)minimumSignificantDigits:(NSInteger)minimumSignificantDigits;
+- (nonnull instancetype)maximumSignificantDigits:(NSInteger)maximumSignificantDigits;
+- (nonnull instancetype)isPartialStringValidationEnabled:(BOOL)isPartialStringValidationEnabled;
+@end
+
 @class UIColor;
 @class UIImage;
 @class NSAttributedString;

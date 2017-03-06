@@ -124,6 +124,7 @@ extension UIScrollView {
         return self
     }
 
+    @available(iOS 10.0, *)
     public func refreshControl(_ refreshControl: UIRefreshControl?) -> Self {
         self.refreshControl = refreshControl
         return self

@@ -42,3 +42,5 @@ Run `carthage update` to build the framework and drag the built `ChainKit.framew
 	- UIButton
 	- UIStackView
 	- UIToolbar
+- NumberFormatter
+- DateFormatter

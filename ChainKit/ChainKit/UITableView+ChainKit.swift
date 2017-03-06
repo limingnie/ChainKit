@@ -14,6 +14,7 @@ public extension UITableView {
         return self
     }
 
+    @available(iOS 10.0, *)
     public func prefetchDataSource(_ prefetchDataSource: UITableViewDataSourcePrefetching?) -> Self {
         self.prefetchDataSource = prefetchDataSource
         return self

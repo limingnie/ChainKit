@@ -14,11 +14,13 @@ public extension UICollectionView {
         return self
     }
 
+    @available(iOS 10.0, *)
     public func prefetchDataSource(_ prefetchDataSource: UICollectionViewDataSourcePrefetching?) -> Self {
         self.prefetchDataSource = prefetchDataSource
         return self
     }
     
+    @available(iOS 10.0, *)
     public func isPrefetchingEnabled(_ isPrefetchingEnabled: Bool) -> Self {
         self.isPrefetchingEnabled = isPrefetchingEnabled
         return self
