@@ -134,4 +134,50 @@ public extension UITextField {
         return self
     }
 
+    public func autocapitalizationType(_ autocapitalizationType: UITextAutocapitalizationType) -> Self {
+        self.autocapitalizationType = autocapitalizationType
+        return self
+    }
+
+    public func autocorrectionType(_ autocorrectionType: UITextAutocorrectionType) -> Self {
+        self.autocorrectionType = autocorrectionType
+        return self
+    }
+
+    public func spellCheckingType(_ spellCheckingType: UITextSpellCheckingType) -> Self {
+        self.spellCheckingType = spellCheckingType
+        return self
+    }
+
+    public func keyboardType(_ keyboardType: UIKeyboardType) -> Self {
+        self.keyboardType = keyboardType
+        return self
+    }
+
+    public func keyboardAppearance(_ keyboardAppearance: UIKeyboardAppearance) -> Self {
+        self.keyboardAppearance = keyboardAppearance
+        return self
+    }
+
+    public func returnKeyType(_ returnKeyType: UIReturnKeyType) -> Self {
+        self.returnKeyType = returnKeyType
+        return self
+    }
+
+    public func enablesReturnKeyAutomatically(_ enablesReturnKeyAutomatically: Bool) -> Self {
+        self.enablesReturnKeyAutomatically = enablesReturnKeyAutomatically
+        return self
+    }
+
+    public func isSecureTextEntry(_ isSecureTextEntry: Bool) -> Self {
+        self.isSecureTextEntry = isSecureTextEntry
+        return self
+    }
+
+    @available(iOS 10.0, *)
+    public func textContentType(_ textContentType: UITextContentType) -> Self {
+        self.textContentType = textContentType
+        return self
+    }
+
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B62B3C6E1E7F5933004B9F81 /* UIControl+ChainKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62B3C6D1E7F5933004B9F81 /* UIControl+ChainKit.swift */; };
 		B656EA371E5269A60002D3CF /* ChainKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B656EA351E5269A60002D3CF /* ChainKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B656EA3F1E5269CD0002D3CF /* UIView+ChainKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656EA3E1E5269CD0002D3CF /* UIView+ChainKit.swift */; };
 		B656EA461E526C670002D3CF /* UILabel+ChainKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B656EA451E526C670002D3CF /* UILabel+ChainKit.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B62B3C6D1E7F5933004B9F81 /* UIControl+ChainKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+ChainKit.swift"; sourceTree = "<group>"; };
 		B656EA321E5269A60002D3CF /* ChainKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ChainKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B656EA351E5269A60002D3CF /* ChainKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChainKit.h; sourceTree = "<group>"; };
 		B656EA361E5269A60002D3CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B62B3C6C1E7F5923004B9F81 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				B62B3C6D1E7F5933004B9F81 /* UIControl+ChainKit.swift */,
+			);
+			name = UIControl;
+			sourceTree = "<group>";
+		};
 		B656EA281E5269A60002D3CF = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +84,7 @@
 		B656EA341E5269A60002D3CF /* ChainKit */ = {
 			isa = PBXGroup;
 			children = (
+				B62B3C6C1E7F5923004B9F81 /* UIControl */,
 				B676F86B1E6E11BB002A81BB /* DateFormatter */,
 				B676F8661E6E0D3B002A81BB /* NumberFormatter */,
 				B677AA0B1E530B8A00690862 /* UIToolbar */,
@@ -290,6 +301,7 @@
 				B676F86A1E6E0D89002A81BB /* NumberFormatter+Chainkit.swift in Sources */,
 				B677AA001E52D9A600690862 /* UIButton+ChainKit.swift in Sources */,
 				B656EA551E52D3620002D3CF /* UICollectionView+ChainKit.swift in Sources */,
+				B62B3C6E1E7F5933004B9F81 /* UIControl+ChainKit.swift in Sources */,
 				B656EA581E52D6990002D3CF /* UICollectionViewFlowLayout+ChainKit.swift in Sources */,
 				B677AA0D1E530B9600690862 /* UIToolbar + Chainkit.swift in Sources */,
 				B656EA3F1E5269CD0002D3CF /* UIView+ChainKit.swift in Sources */,

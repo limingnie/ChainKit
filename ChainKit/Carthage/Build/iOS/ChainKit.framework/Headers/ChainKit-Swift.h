@@ -271,6 +271,15 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @end
 
 
+@interface UIControl (SWIFT_EXTENSION(ChainKit))
+- (nonnull instancetype)isEnabled:(BOOL)isEnabled;
+- (nonnull instancetype)isSelected:(BOOL)isSelected;
+- (nonnull instancetype)isHighlighted:(BOOL)isHighlighted;
+- (nonnull instancetype)contentVerticalAlignment:(UIControlContentVerticalAlignment)contentVerticalAlignment;
+- (nonnull instancetype)contentHorizontalAlignment:(UIControlContentHorizontalAlignment)contentHorizontalAlignment;
+@end
+
+
 @interface UIImageView (SWIFT_EXTENSION(ChainKit))
 - (nonnull instancetype)image:(UIImage * _Nullable)image;
 - (nonnull instancetype)highlightedImage:(UIImage * _Nullable)highlightedImage;
@@ -405,6 +414,15 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 - (nonnull instancetype)inputView:(UIView * _Nullable)inputView;
 - (nonnull instancetype)inputAccessoryView:(UIView * _Nullable)inputAccessoryView;
 - (nonnull instancetype)clearsOnInsertion:(BOOL)clearsOnInsertion;
+- (nonnull instancetype)autocapitalizationType:(UITextAutocapitalizationType)autocapitalizationType;
+- (nonnull instancetype)autocorrectionType:(UITextAutocorrectionType)autocorrectionType;
+- (nonnull instancetype)spellCheckingType:(UITextSpellCheckingType)spellCheckingType;
+- (nonnull instancetype)keyboardType:(UIKeyboardType)keyboardType;
+- (nonnull instancetype)keyboardAppearance:(UIKeyboardAppearance)keyboardAppearance;
+- (nonnull instancetype)returnKeyType:(UIReturnKeyType)returnKeyType;
+- (nonnull instancetype)enablesReturnKeyAutomatically:(BOOL)enablesReturnKeyAutomatically;
+- (nonnull instancetype)isSecureTextEntry:(BOOL)isSecureTextEntry;
+- (nonnull instancetype)textContentType:(UITextContentType _Nonnull)textContentType;
 @end
 
 
@@ -424,6 +442,15 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 - (nonnull instancetype)clearsOnInsertion:(BOOL)clearsOnInsertion;
 - (nonnull instancetype)textContainerInset:(UIEdgeInsets)textContainerInset;
 - (nonnull instancetype)linkTextAttributes:(NSDictionary<NSString *, id> * _Nullable)linkTextAttributes;
+- (nonnull instancetype)autocapitalizationType:(UITextAutocapitalizationType)autocapitalizationType;
+- (nonnull instancetype)autocorrectionType:(UITextAutocorrectionType)autocorrectionType;
+- (nonnull instancetype)spellCheckingType:(UITextSpellCheckingType)spellCheckingType;
+- (nonnull instancetype)keyboardType:(UIKeyboardType)keyboardType;
+- (nonnull instancetype)keyboardAppearance:(UIKeyboardAppearance)keyboardAppearance;
+- (nonnull instancetype)returnKeyType:(UIReturnKeyType)returnKeyType;
+- (nonnull instancetype)enablesReturnKeyAutomatically:(BOOL)enablesReturnKeyAutomatically;
+- (nonnull instancetype)isSecureTextEntry:(BOOL)isSecureTextEntry;
+- (nonnull instancetype)textContentType:(UITextContentType _Nonnull)textContentType;
 @end
 
 @class UIBarButtonItem;
