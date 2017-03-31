@@ -223,6 +223,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @end
 
 @class UIColor;
+@class UIFont;
 @class UIImage;
 @class NSAttributedString;
 
@@ -237,6 +238,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 - (nonnull instancetype)title:(NSString * _Nullable)title for:(UIControlState)state;
 - (nonnull instancetype)titleColor:(UIColor * _Nullable)color for:(UIControlState)state;
 - (nonnull instancetype)titleShadowColor:(UIColor * _Nullable)color for:(UIControlState)state;
+- (nonnull instancetype)titleFont:(UIFont * _Nonnull)font;
 - (nonnull instancetype)image:(UIImage * _Nullable)image for:(UIControlState)state;
 - (nonnull instancetype)backgroundImage:(UIImage * _Nullable)image for:(UIControlState)state;
 - (nonnull instancetype)attributedTitle:(NSAttributedString * _Nullable)title for:(UIControlState)state;
@@ -290,7 +292,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 - (nonnull instancetype)animationRepeatCount:(NSInteger)animationRepeatCount;
 @end
 
-@class UIFont;
 
 @interface UILabel (SWIFT_EXTENSION(ChainKit))
 - (nonnull instancetype)text:(NSString * _Nullable)text;

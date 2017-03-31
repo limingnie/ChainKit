@@ -59,6 +59,11 @@ public extension UIButton {
         return self
     }
 
+    public func titleFont(_ font: UIFont) -> Self {
+        titleLabel?.font = font
+        return self
+    }
+
     public func image(_ image: UIImage?, for state: UIControlState = .normal) -> Self {
         self.setImage(image, for: state)
         return self
