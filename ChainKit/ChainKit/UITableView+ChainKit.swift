@@ -121,7 +121,11 @@ public extension UITableView {
     }
 
 	func cellLayoutMarginsFollowReadableWidth(_ cellLayoutMarginsFollowReadableWidth: Bool) -> Self {
-        self.cellLayoutMarginsFollowReadableWidth = cellLayoutMarginsFollowReadableWidth
+		if #available(iOS 9.0, *) {
+			self.cellLayoutMarginsFollowReadableWidth = cellLayoutMarginsFollowReadableWidth
+		} else {
+			// Fallback on earlier versions
+		}
         return self
     }
 
@@ -136,7 +140,11 @@ public extension UITableView {
     }
 
 	func remembersLastFocusedIndexPath(_ remembersLastFocusedIndexPath: Bool) -> Self {
-        self.remembersLastFocusedIndexPath = remembersLastFocusedIndexPath
+		if #available(iOS 9.0, *) {
+			self.remembersLastFocusedIndexPath = remembersLastFocusedIndexPath
+		} else {
+			// Fallback on earlier versions
+		}
         return self
     }
 

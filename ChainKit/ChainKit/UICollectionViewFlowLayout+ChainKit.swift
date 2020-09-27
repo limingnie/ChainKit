@@ -50,12 +50,20 @@ public extension UICollectionViewFlowLayout {
     }
 
 	func sectionHeadersPinToVisibleBounds(_ sectionHeadersPinToVisibleBounds: Bool) -> Self {
-        self.sectionHeadersPinToVisibleBounds = sectionHeadersPinToVisibleBounds
+		if #available(iOS 9.0, *) {
+			self.sectionHeadersPinToVisibleBounds = sectionHeadersPinToVisibleBounds
+		} else {
+			// Fallback on earlier versions
+		}
         return self
     }
 
 	func sectionFootersPinToVisibleBounds(_ sectionFootersPinToVisibleBounds: Bool) -> Self {
-        self.sectionFootersPinToVisibleBounds = sectionFootersPinToVisibleBounds
+		if #available(iOS 9.0, *) {
+			self.sectionFootersPinToVisibleBounds = sectionFootersPinToVisibleBounds
+		} else {
+			// Fallback on earlier versions
+		}
         return self
     }
 

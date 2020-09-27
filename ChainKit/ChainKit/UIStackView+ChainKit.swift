@@ -7,6 +7,7 @@
 
 import UIKit
 
+@available(iOS 9.0, *)
 public extension UIStackView {
 
 	func axis(_ axis: NSLayoutConstraint.Axis) -> Self {

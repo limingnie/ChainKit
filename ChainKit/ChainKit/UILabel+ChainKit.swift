@@ -90,7 +90,11 @@ public extension UILabel {
     }
 
 	func allowsDefaultTighteningForTruncation(_ allowsDefaultTighteningForTruncation: Bool) -> Self {
-        self.allowsDefaultTighteningForTruncation = allowsDefaultTighteningForTruncation
+		if #available(iOS 9.0, *) {
+			self.allowsDefaultTighteningForTruncation = allowsDefaultTighteningForTruncation
+		} else {
+			// Fallback on earlier versions
+		}
         return self
     }
 

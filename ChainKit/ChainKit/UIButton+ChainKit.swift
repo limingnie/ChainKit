@@ -79,4 +79,14 @@ public extension UIButton {
         return self
     }
 
+	func cornerRadius(_ radius: CGFloat) -> Self {
+		layer.cornerRadius = radius
+		return self
+	}
+
+	func tgContentHorizontalAlignment(_ a: ContentHorizontalAlignment) -> Self {
+		contentHorizontalAlignment = a
+		return self
+	}
+
 }

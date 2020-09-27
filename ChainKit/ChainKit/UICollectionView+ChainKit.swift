@@ -42,7 +42,11 @@ public extension UICollectionView {
     }
     
 	func remembersLastFocusedIndexPath(_ remembersLastFocusedIndexPath: Bool) -> Self {
-        self.remembersLastFocusedIndexPath = remembersLastFocusedIndexPath
+		if #available(iOS 9.0, *) {
+			self.remembersLastFocusedIndexPath = remembersLastFocusedIndexPath
+		} else {
+			// Fallback on earlier versions
+		}
         return self
     }
     
