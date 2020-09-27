@@ -9,125 +9,131 @@ import UIKit
 
 public extension UITextView {
 
-    public func text(_ text: String?) -> Self {
+	func text(_ text: String?) -> Self {
         self.text = text
         return self
     }
 
-    public func font(_ font: UIFont) -> Self {
+	func font(_ font: UIFont) -> Self {
         self.font = font
         return self
     }
 
-    public func textColor(_ textColor: UIColor?) -> Self {
+	func textColor(_ textColor: UIColor?) -> Self {
         self.textColor = textColor
         return self
     }
 
-    public func textAlignment(_ textAlignment: NSTextAlignment) -> Self {
+	func textAlignment(_ textAlignment: NSTextAlignment) -> Self {
         self.textAlignment = textAlignment
         return self
     }
 
-    public func selectedRange(_ selectedRange: NSRange) -> Self {
+	func selectedRange(_ selectedRange: NSRange) -> Self {
         self.selectedRange = selectedRange
         return self
     }
 
-    public func isEditable(_ isEditable: Bool) -> Self {
+	func isEditable(_ isEditable: Bool) -> Self {
         self.isEditable = isEditable
         return self
     }
 
-    public func isSelectable(_ isSelectable: Bool) -> Self {
+	func isSelectable(_ isSelectable: Bool) -> Self {
         self.isSelectable = isSelectable
         return self
     }
 
-    public func dataDetectorTypes(_ dataDetectorTypes: UIDataDetectorTypes) -> Self {
+	func dataDetectorTypes(_ dataDetectorTypes: UIDataDetectorTypes) -> Self {
         self.dataDetectorTypes = dataDetectorTypes
         return self
     }
 
-    public func allowsEditingTextAttributes(_ allowsEditingTextAttributes: Bool) -> Self {
+	func allowsEditingTextAttributes(_ allowsEditingTextAttributes: Bool) -> Self {
         self.allowsEditingTextAttributes = allowsEditingTextAttributes
         return self
     }
 
-    public func attributedText(_ attributedText: NSAttributedString?) -> Self {
+	func attributedText(_ attributedText: NSAttributedString?) -> Self {
         self.attributedText = attributedText
         return self
     }
 
-    public func inputView(_ inputView: UIView?) -> Self {
+	func inputView(_ inputView: UIView?) -> Self {
         self.inputView = inputView
         return self
     }
 
-    public func inputAccessoryView(_ inputAccessoryView: UIView?) -> Self {
+	func inputAccessoryView(_ inputAccessoryView: UIView?) -> Self {
         self.inputAccessoryView = inputAccessoryView
         return self
     }
 
-    public func clearsOnInsertion(_ clearsOnInsertion: Bool) -> Self {
+	func clearsOnInsertion(_ clearsOnInsertion: Bool) -> Self {
         self.clearsOnInsertion = clearsOnInsertion
         return self
     }
 
-    public func textContainerInset(_ textContainerInset: UIEdgeInsets) -> Self {
+	func textContainerInset(_ textContainerInset: UIEdgeInsets) -> Self {
         self.textContainerInset = textContainerInset
         return self
     }
 
-    public func linkTextAttributes(_ linkTextAttributes: [String: Any]?) -> Self {
-        self.linkTextAttributes = linkTextAttributes
+	func linkTextAttributes(_ linkTextAttributes: [String: Any]?) -> Self {
+        self.linkTextAttributes = convertToOptionalNSAttributedStringKeyDictionary(linkTextAttributes)
         return self
     }
     
-    public func autocapitalizationType(_ autocapitalizationType: UITextAutocapitalizationType) -> Self {
+	func autocapitalizationType(_ autocapitalizationType: UITextAutocapitalizationType) -> Self {
         self.autocapitalizationType = autocapitalizationType
         return self
     }
     
-    public func autocorrectionType(_ autocorrectionType: UITextAutocorrectionType) -> Self {
+	func autocorrectionType(_ autocorrectionType: UITextAutocorrectionType) -> Self {
         self.autocorrectionType = autocorrectionType
         return self
     }
     
-    public func spellCheckingType(_ spellCheckingType: UITextSpellCheckingType) -> Self {
+	func spellCheckingType(_ spellCheckingType: UITextSpellCheckingType) -> Self {
         self.spellCheckingType = spellCheckingType
         return self
     }
     
-    public func keyboardType(_ keyboardType: UIKeyboardType) -> Self {
+	func keyboardType(_ keyboardType: UIKeyboardType) -> Self {
         self.keyboardType = keyboardType
         return self
     }
     
-    public func keyboardAppearance(_ keyboardAppearance: UIKeyboardAppearance) -> Self {
+	func keyboardAppearance(_ keyboardAppearance: UIKeyboardAppearance) -> Self {
         self.keyboardAppearance = keyboardAppearance
         return self
     }
     
-    public func returnKeyType(_ returnKeyType: UIReturnKeyType) -> Self {
+	func returnKeyType(_ returnKeyType: UIReturnKeyType) -> Self {
         self.returnKeyType = returnKeyType
         return self
     }
     
-    public func enablesReturnKeyAutomatically(_ enablesReturnKeyAutomatically: Bool) -> Self {
+	func enablesReturnKeyAutomatically(_ enablesReturnKeyAutomatically: Bool) -> Self {
         self.enablesReturnKeyAutomatically = enablesReturnKeyAutomatically
         return self
     }
     
-    public func isSecureTextEntry(_ isSecureTextEntry: Bool) -> Self {
+	func isSecureTextEntry(_ isSecureTextEntry: Bool) -> Self {
         self.isSecureTextEntry = isSecureTextEntry
         return self
     }
     
     @available(iOS 10.0, *)
-    public func textContentType(_ textContentType: UITextContentType) -> Self {
+	func textContentType(_ textContentType: UITextContentType) -> Self {
         self.textContentType = textContentType
         return self
     }
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
 }

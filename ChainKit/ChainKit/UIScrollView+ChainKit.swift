@@ -74,13 +74,13 @@ extension UIScrollView {
         return self
     }
 
-    public func indicatorStyle(_ indicatorStyle: UIScrollViewIndicatorStyle) -> Self {
+    public func indicatorStyle(_ indicatorStyle: UIScrollView.IndicatorStyle) -> Self {
         self.indicatorStyle = indicatorStyle
         return self
     }
 
     public func decelerationRate(_ decelerationRate: CGFloat) -> Self {
-        self.decelerationRate = decelerationRate
+        self.decelerationRate = UIScrollView.DecelerationRate(rawValue: decelerationRate)
         return self
     }
 
@@ -119,7 +119,7 @@ extension UIScrollView {
         return self
     }
 
-    public func keyboardDismissMode(_ keyboardDismissMode: UIScrollViewKeyboardDismissMode) -> Self {
+    public func keyboardDismissMode(_ keyboardDismissMode: UIScrollView.KeyboardDismissMode) -> Self {
         self.keyboardDismissMode = keyboardDismissMode
         return self
     }

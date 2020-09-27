@@ -9,175 +9,186 @@ import UIKit
 
 public extension UITextField {
 
-    public func text(_ text: String?) -> Self {
+	func text(_ text: String?) -> Self {
         self.text = text
         return self
     }
 
-    public func attributedText(_ attributedText: NSAttributedString?) -> Self {
+	func attributedText(_ attributedText: NSAttributedString?) -> Self {
         self.attributedText = attributedText
         return self
     }
 
-    public func textColor(_ textColor: UIColor) -> Self {
+	func textColor(_ textColor: UIColor) -> Self {
         self.textColor = textColor
         return self
     }
 
-    public func font(_ font: UIFont) -> Self {
+	func font(_ font: UIFont) -> Self {
         self.font = font
         return self
     }
 
-    public func textAlignment(_ textAlignment: NSTextAlignment) -> Self {
+	func textAlignment(_ textAlignment: NSTextAlignment) -> Self {
         self.textAlignment = textAlignment
         return self
     }
 
-    public func borderStyle(_ borderStyle: UITextBorderStyle) -> Self {
+	func borderStyle(_ borderStyle: UITextField.BorderStyle) -> Self {
         self.borderStyle = borderStyle
         return self
     }
 
-    public func defaultTextAttributes(_ defaultTextAttributes: [String: Any]) -> Self {
-        self.defaultTextAttributes = defaultTextAttributes
+	func defaultTextAttributes(_ defaultTextAttributes: [String: Any]) -> Self {
+        self.defaultTextAttributes = convertToNSAttributedStringKeyDictionary(defaultTextAttributes)
         return self
     }
 
-    public func placeholder(_ placeholder: String?) -> Self {
+	func placeholder(_ placeholder: String?) -> Self {
         self.placeholder = placeholder
         return self
     }
 
-    public func attributedPlaceholder(_ attributedPlaceholder: NSAttributedString?) -> Self {
+	func attributedPlaceholder(_ attributedPlaceholder: NSAttributedString?) -> Self {
         self.attributedPlaceholder = attributedPlaceholder
         return self
     }
 
-    public func clearsOnBeginEditing(_ clearsOnBeginEditing: Bool) -> Self {
+	func clearsOnBeginEditing(_ clearsOnBeginEditing: Bool) -> Self {
         self.clearsOnBeginEditing = clearsOnBeginEditing
         return self
     }
 
-    public func adjustsFontSizeToFitWidth(_ adjustsFontSizeToFitWidth: Bool) -> Self {
+	func adjustsFontSizeToFitWidth(_ adjustsFontSizeToFitWidth: Bool) -> Self {
         self.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth
         return self
     }
 
-    public func minimumFontSize(_ minimumFontSize: CGFloat) -> Self {
+	func minimumFontSize(_ minimumFontSize: CGFloat) -> Self {
         self.minimumFontSize = minimumFontSize
         return self
     }
 
-    public func delegate(_ delegate: UITextFieldDelegate?) -> Self {
+	func delegate(_ delegate: UITextFieldDelegate?) -> Self {
         self.delegate = delegate
         return self
     }
 
-    public func background(_ background: UIImage?) -> Self {
+	func background(_ background: UIImage?) -> Self {
         self.background = background
         return self
     }
 
-    public func disabledBackground(_ disabledBackground: UIImage?) -> Self {
+	func disabledBackground(_ disabledBackground: UIImage?) -> Self {
         self.disabledBackground = disabledBackground
         return self
     }
 
-    public func allowsEditingTextAttributes(_ allowsEditingTextAttributes: Bool) -> Self {
+	func allowsEditingTextAttributes(_ allowsEditingTextAttributes: Bool) -> Self {
         self.allowsEditingTextAttributes = allowsEditingTextAttributes
         return self
     }
 
-    public func typingAttributes(_ typingAttributes: [String: Any]?) -> Self {
-        self.typingAttributes = typingAttributes
+	func typingAttributes(_ typingAttributes: [String: Any]?) -> Self {
+        self.typingAttributes = convertToOptionalNSAttributedStringKeyDictionary(typingAttributes)
         return self
     }
 
-    public func clearButtonMode(_ clearButtonMode: UITextFieldViewMode) -> Self {
+	func clearButtonMode(_ clearButtonMode: UITextField.ViewMode) -> Self {
         self.clearButtonMode = clearButtonMode
         return self
     }
 
-    public func leftView(_ leftView: UIView?) -> Self {
+	func leftView(_ leftView: UIView?) -> Self {
         self.leftView = leftView
         return self
     }
 
-    public func leftViewMode(_ leftViewMode: UITextFieldViewMode) -> Self {
+	func leftViewMode(_ leftViewMode: UITextField.ViewMode) -> Self {
         self.leftViewMode = leftViewMode
         return self
     }
 
-    public func rightView(_ rightView: UIView?) -> Self {
+	func rightView(_ rightView: UIView?) -> Self {
         self.rightView = rightView
         return self
     }
 
-    public func rightViewMode(_ rightViewMode: UITextFieldViewMode) -> Self {
+	func rightViewMode(_ rightViewMode: UITextField.ViewMode) -> Self {
         self.rightViewMode = rightViewMode
         return self
     }
 
-    public func inputView(_ inputView: UIView?) -> Self {
+	func inputView(_ inputView: UIView?) -> Self {
         self.inputView = inputView
         return self
     }
 
-    public func inputAccessoryView(_ inputAccessoryView: UIView?) -> Self {
+	func inputAccessoryView(_ inputAccessoryView: UIView?) -> Self {
         self.inputAccessoryView = inputAccessoryView
         return self
     }
 
-    public func clearsOnInsertion(_ clearsOnInsertion: Bool) -> Self {
+	func clearsOnInsertion(_ clearsOnInsertion: Bool) -> Self {
         self.clearsOnInsertion = clearsOnInsertion
         return self
     }
 
-    public func autocapitalizationType(_ autocapitalizationType: UITextAutocapitalizationType) -> Self {
+	func autocapitalizationType(_ autocapitalizationType: UITextAutocapitalizationType) -> Self {
         self.autocapitalizationType = autocapitalizationType
         return self
     }
 
-    public func autocorrectionType(_ autocorrectionType: UITextAutocorrectionType) -> Self {
+	func autocorrectionType(_ autocorrectionType: UITextAutocorrectionType) -> Self {
         self.autocorrectionType = autocorrectionType
         return self
     }
 
-    public func spellCheckingType(_ spellCheckingType: UITextSpellCheckingType) -> Self {
+	func spellCheckingType(_ spellCheckingType: UITextSpellCheckingType) -> Self {
         self.spellCheckingType = spellCheckingType
         return self
     }
 
-    public func keyboardType(_ keyboardType: UIKeyboardType) -> Self {
+	func keyboardType(_ keyboardType: UIKeyboardType) -> Self {
         self.keyboardType = keyboardType
         return self
     }
 
-    public func keyboardAppearance(_ keyboardAppearance: UIKeyboardAppearance) -> Self {
+	func keyboardAppearance(_ keyboardAppearance: UIKeyboardAppearance) -> Self {
         self.keyboardAppearance = keyboardAppearance
         return self
     }
 
-    public func returnKeyType(_ returnKeyType: UIReturnKeyType) -> Self {
+	func returnKeyType(_ returnKeyType: UIReturnKeyType) -> Self {
         self.returnKeyType = returnKeyType
         return self
     }
 
-    public func enablesReturnKeyAutomatically(_ enablesReturnKeyAutomatically: Bool) -> Self {
+	func enablesReturnKeyAutomatically(_ enablesReturnKeyAutomatically: Bool) -> Self {
         self.enablesReturnKeyAutomatically = enablesReturnKeyAutomatically
         return self
     }
 
-    public func isSecureTextEntry(_ isSecureTextEntry: Bool) -> Self {
+	func isSecureTextEntry(_ isSecureTextEntry: Bool) -> Self {
         self.isSecureTextEntry = isSecureTextEntry
         return self
     }
 
     @available(iOS 10.0, *)
-    public func textContentType(_ textContentType: UITextContentType) -> Self {
+	func textContentType(_ textContentType: UITextContentType) -> Self {
         self.textContentType = textContentType
         return self
     }
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToNSAttributedStringKeyDictionary(_ input: [String: Any]) -> [NSAttributedString.Key: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
 }

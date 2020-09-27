@@ -9,32 +9,32 @@ import UIKit
 
 public extension UIStackView {
 
-    public func axis(_ axis: UILayoutConstraintAxis) -> Self {
+	func axis(_ axis: NSLayoutConstraint.Axis) -> Self {
         self.axis = axis
         return self
     }
 
-    public func distribution(_ distribution: UIStackViewDistribution) -> Self {
+	func distribution(_ distribution: UIStackView.Distribution) -> Self {
         self.distribution = distribution
         return self
     }
 
-    public func alignment(_ alignment: UIStackViewAlignment) -> Self {
+	func alignment(_ alignment: UIStackView.Alignment) -> Self {
         self.alignment = alignment
         return self
     }
 
-    public func spacing(_ spacing: CGFloat) -> Self {
+	func spacing(_ spacing: CGFloat) -> Self {
         self.spacing = spacing
         return self
     }
 
-    public func isBaselineRelativeArrangement(_ isBaselineRelativeArrangement: Bool) -> Self {
+	func isBaselineRelativeArrangement(_ isBaselineRelativeArrangement: Bool) -> Self {
         self.isBaselineRelativeArrangement = isBaselineRelativeArrangement
         return self
     }
 
-    public func isLayoutMarginsRelativeArrangement(_ isLayoutMarginsRelativeArrangement: Bool) -> Self {
+	func isLayoutMarginsRelativeArrangement(_ isLayoutMarginsRelativeArrangement: Bool) -> Self {
         self.isLayoutMarginsRelativeArrangement = isLayoutMarginsRelativeArrangement
         return self
     }

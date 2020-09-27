@@ -9,39 +9,39 @@ import UIKit
 
 public extension UICollectionView {
     
-    public func dataSource(_ dataSource: UICollectionViewDataSource?) -> Self {
+	func dataSource(_ dataSource: UICollectionViewDataSource?) -> Self {
         self.dataSource = dataSource
         return self
     }
 
     @available(iOS 10.0, *)
-    public func prefetchDataSource(_ prefetchDataSource: UICollectionViewDataSourcePrefetching?) -> Self {
+	func prefetchDataSource(_ prefetchDataSource: UICollectionViewDataSourcePrefetching?) -> Self {
         self.prefetchDataSource = prefetchDataSource
         return self
     }
     
     @available(iOS 10.0, *)
-    public func isPrefetchingEnabled(_ isPrefetchingEnabled: Bool) -> Self {
+	func isPrefetchingEnabled(_ isPrefetchingEnabled: Bool) -> Self {
         self.isPrefetchingEnabled = isPrefetchingEnabled
         return self
     }
     
-    public func backgroundView(_ backgroundView: UIView?) -> Self {
+	func backgroundView(_ backgroundView: UIView?) -> Self {
         self.backgroundView = backgroundView
         return self
     }
     
-    public func allowsSelection(_ allowsSelection: Bool) -> Self {
+	func allowsSelection(_ allowsSelection: Bool) -> Self {
         self.allowsSelection = allowsSelection
         return self
     }
     
-    public func allowsMultipleSelection(_ allowsMultipleSelection: Bool) -> Self {
+	func allowsMultipleSelection(_ allowsMultipleSelection: Bool) -> Self {
         self.allowsMultipleSelection = allowsMultipleSelection
         return self
     }
     
-    public func remembersLastFocusedIndexPath(_ remembersLastFocusedIndexPath: Bool) -> Self {
+	func remembersLastFocusedIndexPath(_ remembersLastFocusedIndexPath: Bool) -> Self {
         self.remembersLastFocusedIndexPath = remembersLastFocusedIndexPath
         return self
     }
