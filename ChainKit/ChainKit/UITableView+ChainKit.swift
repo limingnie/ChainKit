@@ -148,4 +148,29 @@ public extension UITableView {
         return self
     }
 
+	/*
+	 *新添扩展用于tableView数据为空时的设置，请结合TGRxTableView.swift使用
+	 *2020.09.28
+	 */
+	func tgAddNoDataPlaceholder(_ message: String) {
+		let label = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        label.text = message
+		label.textColor = .darkGray
+		label.textAlignment = .center
+        label.sizeToFit()
+        self.isScrollEnabled = false
+        self.backgroundView = label
+        self.separatorStyle = .none
+	}
+
+	/*
+	 *新添扩展用于tableView数据不为空时的设置
+	 *2020.09.28
+	 */
+	func tgRemoveNoDataPlaceholder() {
+		self.isScrollEnabled = true
+        self.backgroundView = nil
+        self.separatorStyle = .singleLine
+	}
+
 }
