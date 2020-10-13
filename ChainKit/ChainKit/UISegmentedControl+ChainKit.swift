@@ -10,18 +10,19 @@ import Foundation
 
 public extension UISegmentedControl {
 
-	func tgFrame(_ frame: CGRect) -> Self {
+	func tg_frame(_ frame: CGRect) -> Self {
 		self.frame = frame
 		return self
 	}
 
-	func tgSelectedSegmentIndex(_ index: Int) -> Self {
+	func tg_selectedSegmentIndex(_ index: Int) -> Self {
 		self.selectedSegmentIndex = index
 		return self
 	}
 
-	func tgBackgroundColor(_ backgroundColor: UIColor?) -> Self {
-        self.backgroundColor = backgroundColor
-        return self
-    }
+//	//父类中已有
+//	func tg_backgroundColor(_ backgroundColor: UIColor?) -> Self {
+//        self.backgroundColor = backgroundColor
+//        return self
+//    }
 }

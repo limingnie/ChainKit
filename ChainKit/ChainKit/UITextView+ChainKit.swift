@@ -9,123 +9,123 @@ import UIKit
 
 public extension UITextView {
 
-	func text(_ text: String?) -> Self {
+	func tg_text(_ text: String?) -> Self {
         self.text = text
         return self
     }
 
-	func font(_ font: UIFont) -> Self {
+	func tg_font(_ font: UIFont) -> Self {
         self.font = font
         return self
     }
 
-	func textColor(_ textColor: UIColor?) -> Self {
+	func tg_textColor(_ textColor: UIColor?) -> Self {
         self.textColor = textColor
         return self
     }
 
-	func textAlignment(_ textAlignment: NSTextAlignment) -> Self {
+	func tg_textAlignment(_ textAlignment: NSTextAlignment) -> Self {
         self.textAlignment = textAlignment
         return self
     }
 
-	func selectedRange(_ selectedRange: NSRange) -> Self {
+	func tg_selectedRange(_ selectedRange: NSRange) -> Self {
         self.selectedRange = selectedRange
         return self
     }
 
-	func isEditable(_ isEditable: Bool) -> Self {
+	func tg_isEditable(_ isEditable: Bool) -> Self {
         self.isEditable = isEditable
         return self
     }
 
-	func isSelectable(_ isSelectable: Bool) -> Self {
+	func tg_isSelectable(_ isSelectable: Bool) -> Self {
         self.isSelectable = isSelectable
         return self
     }
 
-	func dataDetectorTypes(_ dataDetectorTypes: UIDataDetectorTypes) -> Self {
+	func tg_dataDetectorTypes(_ dataDetectorTypes: UIDataDetectorTypes) -> Self {
         self.dataDetectorTypes = dataDetectorTypes
         return self
     }
 
-	func allowsEditingTextAttributes(_ allowsEditingTextAttributes: Bool) -> Self {
+	func tg_allowsEditingTextAttributes(_ allowsEditingTextAttributes: Bool) -> Self {
         self.allowsEditingTextAttributes = allowsEditingTextAttributes
         return self
     }
 
-	func attributedText(_ attributedText: NSAttributedString?) -> Self {
+	func tg_attributedText(_ attributedText: NSAttributedString?) -> Self {
         self.attributedText = attributedText
         return self
     }
 
-	func inputView(_ inputView: UIView?) -> Self {
+	func tg_inputView(_ inputView: UIView?) -> Self {
         self.inputView = inputView
         return self
     }
 
-	func inputAccessoryView(_ inputAccessoryView: UIView?) -> Self {
+	func tg_inputAccessoryView(_ inputAccessoryView: UIView?) -> Self {
         self.inputAccessoryView = inputAccessoryView
         return self
     }
 
-	func clearsOnInsertion(_ clearsOnInsertion: Bool) -> Self {
+	func tg_clearsOnInsertion(_ clearsOnInsertion: Bool) -> Self {
         self.clearsOnInsertion = clearsOnInsertion
         return self
     }
 
-	func textContainerInset(_ textContainerInset: UIEdgeInsets) -> Self {
+	func tg_textContainerInset(_ textContainerInset: UIEdgeInsets) -> Self {
         self.textContainerInset = textContainerInset
         return self
     }
 
-	func linkTextAttributes(_ linkTextAttributes: [String: Any]?) -> Self {
+	func tg_linkTextAttributes(_ linkTextAttributes: [String: Any]?) -> Self {
         self.linkTextAttributes = convertToOptionalNSAttributedStringKeyDictionary(linkTextAttributes)
         return self
     }
     
-	func autocapitalizationType(_ autocapitalizationType: UITextAutocapitalizationType) -> Self {
+	func tg_autocapitalizationType(_ autocapitalizationType: UITextAutocapitalizationType) -> Self {
         self.autocapitalizationType = autocapitalizationType
         return self
     }
     
-	func autocorrectionType(_ autocorrectionType: UITextAutocorrectionType) -> Self {
+	func tg_autocorrectionType(_ autocorrectionType: UITextAutocorrectionType) -> Self {
         self.autocorrectionType = autocorrectionType
         return self
     }
     
-	func spellCheckingType(_ spellCheckingType: UITextSpellCheckingType) -> Self {
+	func tg_spellCheckingType(_ spellCheckingType: UITextSpellCheckingType) -> Self {
         self.spellCheckingType = spellCheckingType
         return self
     }
     
-	func keyboardType(_ keyboardType: UIKeyboardType) -> Self {
+	func tg_keyboardType(_ keyboardType: UIKeyboardType) -> Self {
         self.keyboardType = keyboardType
         return self
     }
     
-	func keyboardAppearance(_ keyboardAppearance: UIKeyboardAppearance) -> Self {
+	func tg_keyboardAppearance(_ keyboardAppearance: UIKeyboardAppearance) -> Self {
         self.keyboardAppearance = keyboardAppearance
         return self
     }
     
-	func returnKeyType(_ returnKeyType: UIReturnKeyType) -> Self {
+	func tg_returnKeyType(_ returnKeyType: UIReturnKeyType) -> Self {
         self.returnKeyType = returnKeyType
         return self
     }
     
-	func enablesReturnKeyAutomatically(_ enablesReturnKeyAutomatically: Bool) -> Self {
+	func tg_enablesReturnKeyAutomatically(_ enablesReturnKeyAutomatically: Bool) -> Self {
         self.enablesReturnKeyAutomatically = enablesReturnKeyAutomatically
         return self
     }
     
-	func isSecureTextEntry(_ isSecureTextEntry: Bool) -> Self {
+	func tg_isSecureTextEntry(_ isSecureTextEntry: Bool) -> Self {
         self.isSecureTextEntry = isSecureTextEntry
         return self
     }
     
     @available(iOS 10.0, *)
-	func textContentType(_ textContentType: UITextContentType) -> Self {
+	func tg_textContentType(_ textContentType: UITextContentType) -> Self {
         self.textContentType = textContentType
         return self
     }

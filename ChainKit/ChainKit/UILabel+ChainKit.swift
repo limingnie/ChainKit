@@ -9,87 +9,87 @@ import UIKit
 
 public extension UILabel {
 
-	func text(_ text: String?) -> Self {
+	func tg_text(_ text: String?) -> Self {
         self.text = text
         return self
     }
 
-	func font(_ font: UIFont) -> Self {
+	func tg_font(_ font: UIFont) -> Self {
         self.font = font
         return self
     }
 
-	func textColor(_ textColor: UIColor) -> Self {
+	func tg_textColor(_ textColor: UIColor) -> Self {
         self.textColor = textColor
         return self
     }
 
-	func shadowColor(_ shadowColor: UIColor?) -> Self {
+	func tg_shadowColor(_ shadowColor: UIColor?) -> Self {
         self.shadowColor = shadowColor
         return self
     }
 
-	func shadowOffset(_ shadowOffset: CGSize) -> Self {
+	func tg_shadowOffset(_ shadowOffset: CGSize) -> Self {
         self.shadowOffset = shadowOffset
         return self
     }
 
-	func textAlignment(_ textAlignment: NSTextAlignment) -> Self {
+	func tg_textAlignment(_ textAlignment: NSTextAlignment) -> Self {
         self.textAlignment = textAlignment
         return self
     }
 
-	func lineBreakMode(_ lineBreakMode: NSLineBreakMode) -> Self {
+	func tg_lineBreakMode(_ lineBreakMode: NSLineBreakMode) -> Self {
         self.lineBreakMode = lineBreakMode
         return self
     }
 
-	func attributedText(_ attributedText: NSAttributedString?) -> Self {
+	func tg_attributedText(_ attributedText: NSAttributedString?) -> Self {
         self.attributedText = attributedText
         return self
     }
 
-	func highlightedTextColor(_ highlightedTextColor: UIColor?) -> Self {
+	func tg_highlightedTextColor(_ highlightedTextColor: UIColor?) -> Self {
         self.highlightedTextColor = highlightedTextColor
         return self
     }
 
-	func isHighlighted(_ isHighlighted: Bool) -> Self {
+	func tg_isHighlighted(_ isHighlighted: Bool) -> Self {
         self.isHighlighted = isHighlighted
         return self
     }
 
-	func isUserInteractionEnabled(_ isUserInteractionEnabled: Bool) -> Self {
+	func tg_isUserInteractionEnabled(_ isUserInteractionEnabled: Bool) -> Self {
         self.isUserInteractionEnabled = isUserInteractionEnabled
         return self
     }
 
-	func isEnabled(_ isEnabled: Bool) -> Self {
+	func tg_isEnabled(_ isEnabled: Bool) -> Self {
         self.isEnabled = isEnabled
         return self
     }
 
-	func numberOfLines(_ numberOfLines: Int) -> Self {
+	func tg_numberOfLines(_ numberOfLines: Int) -> Self {
         self.numberOfLines = numberOfLines
         return self
     }
 
-	func adjustsFontSizeToFitWidth(_ adjustsFontSizeToFitWidth: Bool) -> Self {
+	func tg_adjustsFontSizeToFitWidth(_ adjustsFontSizeToFitWidth: Bool) -> Self {
         self.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth
         return self
     }
 
-	func baselineAdjustment(_ baselineAdjustment: UIBaselineAdjustment) -> Self {
+	func tg_baselineAdjustment(_ baselineAdjustment: UIBaselineAdjustment) -> Self {
         self.baselineAdjustment = baselineAdjustment
         return self
     }
 
-	func minimumScaleFactor(_ minimumScaleFactor: CGFloat) -> Self {
+	func tg_minimumScaleFactor(_ minimumScaleFactor: CGFloat) -> Self {
         self.minimumScaleFactor = minimumScaleFactor
         return self
     }
 
-	func allowsDefaultTighteningForTruncation(_ allowsDefaultTighteningForTruncation: Bool) -> Self {
+	func tg_allowsDefaultTighteningForTruncation(_ allowsDefaultTighteningForTruncation: Bool) -> Self {
 		if #available(iOS 9.0, *) {
 			self.allowsDefaultTighteningForTruncation = allowsDefaultTighteningForTruncation
 		} else {
@@ -98,7 +98,7 @@ public extension UILabel {
         return self
     }
 
-	func preferredMaxLayoutWidth(_ preferredMaxLayoutWidth: CGFloat) -> Self {
+	func tg_preferredMaxLayoutWidth(_ preferredMaxLayoutWidth: CGFloat) -> Self {
         self.preferredMaxLayoutWidth = preferredMaxLayoutWidth
         return self
     }

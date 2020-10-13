@@ -9,172 +9,172 @@ import Foundation
 
 public extension DateFormatter {
 
-	func formattingContext(_ formattingContext: Formatter.Context) -> Self {
+	func tg_formattingContext(_ formattingContext: Formatter.Context) -> Self {
         self.formattingContext = formattingContext
         return self
     }
 
-	func dateFormat(_ dateFormat: String) -> Self {
+	func tg_dateFormat(_ dateFormat: String) -> Self {
         self.dateFormat = dateFormat
         return self
     }
 
-	func dateStyle(_ dateStyle: Style) -> Self {
+	func tg_dateStyle(_ dateStyle: Style) -> Self {
         self.dateStyle = dateStyle
         return self
     }
 
-	func timeStyle(_ timeStyle: Style) -> Self {
+	func tg_timeStyle(_ timeStyle: Style) -> Self {
         self.timeStyle = timeStyle
         return self
     }
 
-	func locale(_ locale: Locale) -> Self {
+	func tg_locale(_ locale: Locale) -> Self {
         self.locale = locale
         return self
     }
 
-	func generatesCalendarDates(_ generatesCalendarDates: Bool) -> Self {
+	func tg_generatesCalendarDates(_ generatesCalendarDates: Bool) -> Self {
         self.generatesCalendarDates = generatesCalendarDates
         return self
     }
 
-	func formatterBehavior(_ formatterBehavior: Behavior) -> Self {
+	func tg_formatterBehavior(_ formatterBehavior: Behavior) -> Self {
         self.formatterBehavior = formatterBehavior
         return self
     }
 
-	func timeZone(_ timeZone: TimeZone) -> Self {
+	func tg_timeZone(_ timeZone: TimeZone) -> Self {
         self.timeZone = timeZone
         return self
     }
 
-	func calendar(_ calendar: Calendar) -> Self {
+	func tg_calendar(_ calendar: Calendar) -> Self {
         self.calendar = calendar
         return self
     }
 
-	func isLenient(_ isLenient: Bool) -> Self {
+	func tg_isLenient(_ isLenient: Bool) -> Self {
         self.isLenient = isLenient
         return self
     }
 
-	func twoDigitStartDate(_ twoDigitStartDate: Date) -> Self {
+	func tg_twoDigitStartDate(_ twoDigitStartDate: Date) -> Self {
         self.twoDigitStartDate = twoDigitStartDate
         return self
     }
 
-	func defaultDate(_ defaultDate: Date) -> Self {
+	func tg_defaultDate(_ defaultDate: Date) -> Self {
         self.defaultDate = defaultDate
         return self
     }
 
-	func eraSymbols(_ eraSymbols: [String]) -> Self {
+	func tg_eraSymbols(_ eraSymbols: [String]) -> Self {
         self.eraSymbols = eraSymbols
         return self
     }
 
-	func monthSymbols(_ monthSymbols: [String]) -> Self {
+	func tg_monthSymbols(_ monthSymbols: [String]) -> Self {
         self.monthSymbols = monthSymbols
         return self
     }
 
-	func shortMonthSymbols(_ shortMonthSymbols: [String]) -> Self {
+	func tg_shortMonthSymbols(_ shortMonthSymbols: [String]) -> Self {
         self.shortMonthSymbols = shortMonthSymbols
         return self
     }
 
-	func weekdaySymbols(_ weekdaySymbols: [String]) -> Self {
+	func tg_weekdaySymbols(_ weekdaySymbols: [String]) -> Self {
         self.weekdaySymbols = weekdaySymbols
         return self
     }
 
-	func shortWeekdaySymbols(_ shortWeekdaySymbols: [String]) -> Self {
+	func tg_shortWeekdaySymbols(_ shortWeekdaySymbols: [String]) -> Self {
         self.shortWeekdaySymbols = shortWeekdaySymbols
         return self
     }
 
-	func amSymbol(_ amSymbol: String) -> Self {
+	func tg_amSymbol(_ amSymbol: String) -> Self {
         self.amSymbol = amSymbol
         return self
     }
 
-	func pmSymbol(_ pmSymbol: String) -> Self {
+	func tg_pmSymbol(_ pmSymbol: String) -> Self {
         self.pmSymbol = pmSymbol
         return self
     }
 
-	func longEraSymbols(_ longEraSymbols: [String]) -> Self {
+	func tg_longEraSymbols(_ longEraSymbols: [String]) -> Self {
         self.longEraSymbols = longEraSymbols
         return self
     }
 
-	func veryShortMonthSymbols(_ veryShortMonthSymbols: [String]) -> Self {
+	func tg_veryShortMonthSymbols(_ veryShortMonthSymbols: [String]) -> Self {
         self.veryShortMonthSymbols = veryShortMonthSymbols
         return self
     }
 
-	func standaloneMonthSymbols(_ standaloneMonthSymbols: [String]) -> Self {
+	func tg_standaloneMonthSymbols(_ standaloneMonthSymbols: [String]) -> Self {
         self.standaloneMonthSymbols = standaloneMonthSymbols
         return self
     }
 
-	func shortStandaloneMonthSymbols(_ shortStandaloneMonthSymbols: [String]) -> Self {
+	func tg_shortStandaloneMonthSymbols(_ shortStandaloneMonthSymbols: [String]) -> Self {
         self.shortStandaloneMonthSymbols = shortStandaloneMonthSymbols
         return self
     }
 
-	func veryShortStandaloneMonthSymbols(_ veryShortStandaloneMonthSymbols: [String]) -> Self {
+	func tg_veryShortStandaloneMonthSymbols(_ veryShortStandaloneMonthSymbols: [String]) -> Self {
         self.veryShortStandaloneMonthSymbols = veryShortStandaloneMonthSymbols
         return self
     }
 
-	func veryShortWeekdaySymbols(_ veryShortWeekdaySymbols: [String]) -> Self {
+	func tg_veryShortWeekdaySymbols(_ veryShortWeekdaySymbols: [String]) -> Self {
         self.veryShortWeekdaySymbols = veryShortWeekdaySymbols
         return self
     }
 
-	func standaloneWeekdaySymbols(_ standaloneWeekdaySymbols: [String]) -> Self {
+	func tg_standaloneWeekdaySymbols(_ standaloneWeekdaySymbols: [String]) -> Self {
         self.standaloneWeekdaySymbols = standaloneWeekdaySymbols
         return self
     }
 
-	func shortStandaloneWeekdaySymbols(_ shortStandaloneWeekdaySymbols: [String]) -> Self {
+	func tg_shortStandaloneWeekdaySymbols(_ shortStandaloneWeekdaySymbols: [String]) -> Self {
         self.shortStandaloneWeekdaySymbols = shortStandaloneWeekdaySymbols
         return self
     }
 
-	func veryShortStandaloneWeekdaySymbols(_ veryShortStandaloneWeekdaySymbols: [String]) -> Self {
+	func tg_veryShortStandaloneWeekdaySymbols(_ veryShortStandaloneWeekdaySymbols: [String]) -> Self {
         self.veryShortStandaloneWeekdaySymbols = veryShortStandaloneWeekdaySymbols
         return self
     }
 
-	func quarterSymbols(_ quarterSymbols: [String]) -> Self {
+	func tg_quarterSymbols(_ quarterSymbols: [String]) -> Self {
         self.quarterSymbols = quarterSymbols
         return self
     }
 
-	func shortQuarterSymbols(_ shortQuarterSymbols: [String]) -> Self {
+	func tg_shortQuarterSymbols(_ shortQuarterSymbols: [String]) -> Self {
         self.shortQuarterSymbols = shortQuarterSymbols
         return self
     }
 
-	func standaloneQuarterSymbols(_ standaloneQuarterSymbols: [String]) -> Self {
+	func tg_standaloneQuarterSymbols(_ standaloneQuarterSymbols: [String]) -> Self {
         self.standaloneQuarterSymbols = standaloneQuarterSymbols
         return self
     }
 
-	func shortStandaloneQuarterSymbols(_ shortStandaloneQuarterSymbols: [String]) -> Self {
+	func tg_shortStandaloneQuarterSymbols(_ shortStandaloneQuarterSymbols: [String]) -> Self {
         self.shortStandaloneQuarterSymbols = shortStandaloneQuarterSymbols
         return self
     }
 
-	func gregorianStartDate(_ gregorianStartDate: Date) -> Self {
+	func tg_gregorianStartDate(_ gregorianStartDate: Date) -> Self {
         self.gregorianStartDate = gregorianStartDate
         return self
     }
 
-	func doesRelativeDateFormatting(_ doesRelativeDateFormatting: Bool) -> Self {
+	func tg_doesRelativeDateFormatting(_ doesRelativeDateFormatting: Bool) -> Self {
         self.doesRelativeDateFormatting = doesRelativeDateFormatting
         return self
     }

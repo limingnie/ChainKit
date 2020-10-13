@@ -9,37 +9,37 @@ import UIKit
 
 public extension UIImageView {
     
-	func image(_ image: UIImage?) -> Self {
+	func tg_image(_ image: UIImage?) -> Self {
         self.image = image
         return self
     }
     
-	func highlightedImage(_ highlightedImage: UIImage?) -> Self {
+	func tg_highlightedImage(_ highlightedImage: UIImage?) -> Self {
         self.highlightedImage = highlightedImage
         return self
     }
     
-	func isHighlighted(_ isHighlighted: Bool) -> Self {
+	func tg_isHighlighted(_ isHighlighted: Bool) -> Self {
         self.isHighlighted = isHighlighted
         return self
     }
     
-	func animationImages(_ animationImages: [UIImage]?) -> Self {
+	func tg_animationImages(_ animationImages: [UIImage]?) -> Self {
         self.animationImages = animationImages
         return self
     }
     
-	func highlightedAnimationImages(_ highlightedAnimationImages: [UIImage]?) -> Self {
+	func tg_highlightedAnimationImages(_ highlightedAnimationImages: [UIImage]?) -> Self {
         self.highlightedAnimationImages = highlightedAnimationImages
         return self
     }
     
-	func animationDuration(_ animationDuration: TimeInterval) -> Self {
+	func tg_animationDuration(_ animationDuration: TimeInterval) -> Self {
         self.animationDuration = animationDuration
         return self
     }
     
-	func animationRepeatCount(_ animationRepeatCount: Int) -> Self {
+	func tg_animationRepeatCount(_ animationRepeatCount: Int) -> Self {
         self.animationRepeatCount = animationRepeatCount
         return self
     }

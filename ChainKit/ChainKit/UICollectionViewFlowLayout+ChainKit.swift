@@ -9,47 +9,47 @@ import UIKit
 
 public extension UICollectionViewFlowLayout {
 
-	func minimumLineSpacing(_ minimumLineSpacing: CGFloat) -> Self {
+	func tg_minimumLineSpacing(_ minimumLineSpacing: CGFloat) -> Self {
         self.minimumLineSpacing = minimumLineSpacing
         return self
     }
 
-	func minimumInteritemSpacing(_ minimumInteritemSpacing: CGFloat) -> Self {
+	func tg_minimumInteritemSpacing(_ minimumInteritemSpacing: CGFloat) -> Self {
         self.minimumInteritemSpacing = minimumInteritemSpacing
         return self
     }
 
-	func itemSize(_ itemSize: CGSize) -> Self {
+	func tg_itemSize(_ itemSize: CGSize) -> Self {
         self.itemSize = itemSize
         return self
     }
 
-	func estimatedItemSize(_ estimatedItemSize: CGSize) -> Self {
+	func tg_estimatedItemSize(_ estimatedItemSize: CGSize) -> Self {
         self.estimatedItemSize = estimatedItemSize
         return self
     }
 
-	func scrollDirection(_ scrollDirection: UICollectionView.ScrollDirection) -> Self {
+	func tg_scrollDirection(_ scrollDirection: UICollectionView.ScrollDirection) -> Self {
         self.scrollDirection = scrollDirection
         return self
     }
 
-	func headerReferenceSize(_ headerReferenceSize: CGSize) -> Self {
+	func tg_headerReferenceSize(_ headerReferenceSize: CGSize) -> Self {
         self.headerReferenceSize = headerReferenceSize
         return self
     }
 
-	func footerReferenceSize(_ footerReferenceSize: CGSize) -> Self {
+	func tg_footerReferenceSize(_ footerReferenceSize: CGSize) -> Self {
         self.footerReferenceSize = footerReferenceSize
         return self
     }
 
-	func sectionInset(_ sectionInset: UIEdgeInsets) -> Self {
+	func tg_sectionInset(_ sectionInset: UIEdgeInsets) -> Self {
         self.sectionInset = sectionInset
         return self
     }
 
-	func sectionHeadersPinToVisibleBounds(_ sectionHeadersPinToVisibleBounds: Bool) -> Self {
+	func tg_sectionHeadersPinToVisibleBounds(_ sectionHeadersPinToVisibleBounds: Bool) -> Self {
 		if #available(iOS 9.0, *) {
 			self.sectionHeadersPinToVisibleBounds = sectionHeadersPinToVisibleBounds
 		} else {
@@ -58,7 +58,7 @@ public extension UICollectionViewFlowLayout {
         return self
     }
 
-	func sectionFootersPinToVisibleBounds(_ sectionFootersPinToVisibleBounds: Bool) -> Self {
+	func tg_sectionFootersPinToVisibleBounds(_ sectionFootersPinToVisibleBounds: Bool) -> Self {
 		if #available(iOS 9.0, *) {
 			self.sectionFootersPinToVisibleBounds = sectionFootersPinToVisibleBounds
 		} else {
