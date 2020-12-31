@@ -59,10 +59,11 @@ public extension UILabel {
         return self
     }
 
-	func tg_isUserInteractionEnabled(_ isUserInteractionEnabled: Bool) -> Self {
-        self.isUserInteractionEnabled = isUserInteractionEnabled
-        return self
-    }
+	//父类中已实现
+//	func tg_isUserInteractionEnabled(_ isUserInteractionEnabled: Bool) -> Self {
+//        self.isUserInteractionEnabled = isUserInteractionEnabled
+//        return self
+//    }
 
 	func tg_isEnabled(_ isEnabled: Bool) -> Self {
         self.isEnabled = isEnabled

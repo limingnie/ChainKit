@@ -53,4 +53,36 @@ public extension UIView {
         return self
     }
 
+	//设置圆角
+	func tg_layer_cornerRadius(_ radius: CGFloat) -> Self {
+		self.layer.cornerRadius = radius
+		return self
+	}
+
+	//设置对应圆角并返回自己
+	func tg_layer_cornerRadius2(_ radius: CGFloat, _ corners1: UIRectCorner, _ corners2: CACornerMask) -> Self {
+		tg_layer_cornerRadius3(radius, corners1, corners2)
+		return self
+	}
+
+	//设置对应圆角
+	func tg_layer_cornerRadius3(_ radius: CGFloat, _ corners1: UIRectCorner, _ corners2: CACornerMask) {
+		if #available(iOS 11.0, *) {
+			self.clipsToBounds = false
+			self.layer.cornerRadius = radius
+			self.layer.maskedCorners = corners2
+		} else {
+			let shapeLayer = CAShapeLayer()
+			shapeLayer.bounds = self.frame
+			shapeLayer.position = self.center
+			shapeLayer.path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners1, cornerRadii: CGSize(width: radius, height: radius)).cgPath
+			self.layer.mask = shapeLayer
+		}
+	}
+
+	func tg_isUserInteractionEnabled(_ bool: Bool) -> Self {
+		self.isUserInteractionEnabled = bool
+		return self
+	}
+
 }

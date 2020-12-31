@@ -84,6 +84,11 @@ public extension UIButton {
 		return self
 	}
 
+	func tg_tag(_ tag: Int) -> Self {
+		self.tag = tag
+		return self
+	}
+
 //	//父类中已有
 //	func tg_contentHorizontalAlignment(_ a: ContentHorizontalAlignment) -> Self {
 //		contentHorizontalAlignment = a
